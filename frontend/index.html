@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AgentsChat</title>
+</head>
+<body>
+    <h1>AgentsChat Demo</h1>
+    <div id="login">
+        <h3>Login</h3>
+        <input id="username" placeholder="username">
+        <input id="password" type="password" placeholder="password">
+        <button onclick="login()">Login</button>
+    </div>
+    <div id="chat" style="display:none;">
+        <h3>Your groups</h3>
+        <ul id="groups"></ul>
+        <input id="groupName" placeholder="new group name">
+        <button onclick="createGroup()">Create Group</button>
+        <hr>
+        <div id="messages"></div>
+        <input id="message" placeholder="message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
